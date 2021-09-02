@@ -1,0 +1,383 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    top: 0;
+}
+.img ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.img{
+    width: 100vw;
+    height: 56.23vh;
+    overflow: scroll;
+}
+
+#divs{
+    transition: transform 0.5s;
+}
+
+.img::-webkit-scrollbar{
+    display: none;
+}
+.img img{
+    width: 100vw;
+}
+main{
+    width: 100%;
+    background-color: white;
+}
+
+.info-con-top{
+    width: 92%;
+    margin: auto;
+    padding: auto;
+    height: 5.7vh;
+    line-height: 5.7vh;
+}
+
+
+.info-con-top .span1{
+    color: #e02e24;
+    font-size: 16px;
+}
+
+.info-con-top .rice{
+    color: #e02e24;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.info-con-top .oldrice{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #585958;
+}
+
+.info-con-top .count{
+    float: right;
+    line-height: 0px;
+    margin-top: 4vh;
+    font-size: 14px;
+    color: #585958;
+}
+
+.info-con-middle{
+    width: 92%;
+    margin: auto;
+    padding: auto;
+    height: 7.1vh;
+    padding: 1vh 0vw 0vh;
+}
+.info-con-middle span span:nth-of-type(1){
+    font-weight: bold;
+    line-height: 3.5vh;
+}
+.info-con-middle img{
+    width: 9%;
+}
+
+.info-con-middle span span:nth-of-type(2){
+    font-weight: none;
+    font-size: 14px;
+    background-color: #25b513;
+    color: white;
+}
+
+.info-con-bottom{
+    width: 94%;
+    height: 5.5vh;
+    padding: 1.5vh 3vw 0vh;
+}
+.info-con-bottom div{
+    height: 5.5vh;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    line-height: 5.5vh;
+}
+
+
+.info-con-bottom div>div{
+    margin: 1vh 2vw;
+    height: 3.5vh;
+    width: 10%;
+}
+.info-con-bottom span:nth-of-type(1){
+    width: 20%;
+    font-weight: bold;
+}
+
+.info-con-bottom span:nth-of-type(2){
+    width: 100%;
+    font-size: 14px;
+    color: #3a363d;
+}
+
+.info-con-lastbottom{
+    margin-top: 1.5vh;
+    width: 94%;
+    height: 5.7vh;
+    padding: 0vh 3vw 0vh;
+}
+
+.info-con-lastbottom span{
+    margin-right: 3vw;
+    line-height: 5.7vh;
+    font-size: 15px;
+    color: #58595b;
+}
+
+.info-con-lastbottom span:nth-of-type(4){
+    margin-right: 0px;
+    float: right;
+}
+
+.personinfo-head{
+    margin-top: 1.2vh;
+    width: 94%;
+    height: 5.7vh;
+    padding: 0vh 3vw 0vh;
+    line-height: 5.7vh;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.personinfo-head span:nth-of-type(2){
+    float: right;
+    font-size: 14px;
+    color: #9c9c9c;
+}
+
+
+.purinfo{
+    width: 100%;
+    background-color: white;
+}
+
+
+.purinfo-con{
+    width: 100%;
+    height: 18vh;
+    overflow: hidden;
+} 
+
+.div-purinfo{
+    position: relative;
+    width: 94%;
+    height: 9vh;
+    padding: 0vh 3vw 0vh;
+    line-height: 9vh;
+} 
+
+.div-img-left{
+    left: 30px;
+    top: 1.5vh;
+    position: absolute;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.div-img-right{
+    top: 1.5vh;
+    position: absolute;
+
+}
+.div-purinfo img{
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.div-info{
+    left: 80px;
+    position: absolute;
+}
+
+.div-button{
+    float: right;
+}
+
+.div-button button{
+    width: 18vw;
+    height: 4.5vh;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e02e24;
+    color: white;
+}
+
+.classification{
+    width: 100%;
+    height: 4.45vh;
+    padding: 2vh 0vw 0vh;
+    background-color: white;
+}
+
+.classification ul{
+    display: flex;
+    line-height: 4.45vh;
+    flex-direction: row;
+}
+
+.classification ul li{
+    margin-left: 3vw;
+    padding: 0vh 2vw;
+    background-color: #daf8cd;
+    color: #25b513;
+    border-radius: 5px;
+}
+
+.classification ul li:nth-of-type(2),.classification ul li:nth-of-type(3){
+    background-color: #fceae9;;
+    color: #58595b;
+    border-radius: 5px;
+}
+
+.classification span{
+    width: 14px;
+    height: 15px;
+    display: inline-block;
+    background: url('../images/正品.png') 0px 0px;
+}
+
+.comm,.experience{
+    width: 97%;
+    padding: 1vh 0vw 0vh 3vw;
+    background-color: white;
+}
+
+.experience{
+    height: 32vh;
+    margin-bottom: 70px;
+}
+.comm-con{
+    margin-top: 2vh;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    height: 12.89vh;
+}
+.experience-con{
+    margin-top: 2vh;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    height: 32vh;
+}
+.comm-con-left,.experience-con-left{
+    width: 10%;
+    height: 3.7vh;
+    float: left;
+}
+
+.comm-con-left img,.experience-con-left img{
+    width: 70%;
+    border-radius: 50%;
+}
+.comm-con-right,.experience-con-right{
+    float: left;
+    width: 90%;
+    height: 3.7vh;
+    line-height: 3.7vh;
+}
+.comm-con-bottom,.experience-con-bottom{
+    float: left;
+    width: 100%;
+    height: 7.19vh;
+    padding: 2vh 0vw 0vh 0vw;
+}
+
+.comm-con-bottom span,.experience-con-bottomspan{
+    font-size: 17px;
+    color: #58595b;
+}
+
+.experience-con-bottom ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+.experience-con-bottom ul li img{
+    margin: 0px 1vw;
+    width: 29.5vw;
+    height: 29.5vw;
+    border-radius: 5px;
+
+}
+
+.btn{
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1;
+}
+.btn button{
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    width: 40px;
+    font-size: 12px;
+    height: 40px;
+}
+
+footer{
+    width: 100%;
+    height: 7.95vh;
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    border-top: 1px solid #eeeeee;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer ul li{
+    text-align: center;
+    cursor: pointer;
+    width: 12%;
+}
+
+footer ul li{
+    font-size: 14px;
+    color: #9c9c9c;
+    text-align: center;
+}
+
+footer ul li:nth-of-type(4){
+    width: 28%;
+    height: 7.95vh;
+    font-size: 18px;
+    color: white;
+    background-color: #f4aba7;
+
+}
+
+footer ul li:nth-of-type(5){
+    width: 36%;
+    height: 7.95vh;
+    font-size: 18px;
+    color: white;
+    background-color: #E02E24;
+}
+
+
+
+footer ul li img{
+    margin-top: 1.5vh;
+    width: 40%;
+}

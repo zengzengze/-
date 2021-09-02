@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header-top">
+                <div class="left">
+                    <div class="div-img">
+                        <img src="../images/定位.png" alt="">
+                    </div>
+                </div>
+                <div class="middle">
+                    <span>曾凡经</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>18178303876</span>
+                    <p>
+                        广西壮族自治区
+                        &nbsp;
+                        崇左市
+                        &nbsp;
+                        江州区
+                        &nbsp;
+                        广西民族师范学院(丽川路1号近丽川路)
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="div-img">
+                        <img src="../images/向右.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+            </div>
+        </header>
+        <main>
+            <div class="main-top">
+                <div>
+                    <img src="../images/linxintao.png"/>
+                </div>
+                <div>
+                    林欣淘官方旗舰店
+                </div>
+            </div>
+            <div class="main-middle">
+                <div>
+                    <div class="main-middle-left">
+                        <img src="../images/qingjiemaojin.webp" alt="">
+                    </div>
+                    <div class="main-middle-right">
+                        <p>
+                            加厚清洁毛巾洗碗抹布家用加大厨房擦手擦桌擦碗吸水百洁布
+                        </p>
+                        <p>
+                            款式: #大号格纹【25*25】10条/好用
+                        </p>
+
+                        <span>
+                            ¥<span id="price">5.88</span>/件
+                            <span>极速退款</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-middle-bottom">
+                <p>购买数量</p>
+                <div class="bottom-sum">
+                    <div onclick="minus()">-</div>
+                    <input type="text" value="1" id="count">
+                    <div onclick="plus()">+</div>
+                </div>
+            </div>
+        </main>
+
+        <section>
+            <ul>
+                <li>
+                    <div>
+                        <div class="div-img1">
+                            <img src="../images/weixinzhifu.png" alt="">
+                        </div>
+                        <div class="div-pay"> 
+                            微信支付
+                        </div>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div>
+                        <div class="div-img1">
+                            <img src="../images/支付宝.png" alt="">
+                        </div>
+                        <div class="div-pay"> 
+                            支付宝
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <div class="footer-left">
+                <p>
+                    <span>实付款:</span>
+                    <span id="sumprice">5.88</span>
+                    <span>免运费</span>
+                </p>
+            </div>
+            <div class="footer-right">
+                立即支付
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+        function sum(){
+            var sum=0;
+            sum=price.innerHTML*count.value;
+            sum=Math.floor(sum * 100) / 100;
+            sumprice.innerHTML=sum;
+        }
+
+        sum();
+        function plus(){
+            count.value=parseInt(count.value)+1;
+            sum()
+        }
+
+        function minus(){
+            if(parseInt(count.value)-1<1){
+                count.value=count.value;
+            }else{
+                count.value=parseInt(count.value)-1;
+            } 
+            sum()
+        }
+    </script>
+</body>
+</html>

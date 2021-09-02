@@ -1,0 +1,363 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.hide{
+    display: none;
+}
+
+body{
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    top: 0;
+}
+.wrap{
+    width: 100%; 
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.radio,.radio1,#radio2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+}
+
+
+#radiocolor{
+    background: url('../images/选中.png');
+}
+
+.radiocolor{
+    background: url('../images/选中.png');
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+header #manage{
+    cursor: pointer;
+}
+
+.header{
+    width: 97%;
+    height: 3vh;
+    padding: 20px 12px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(-90deg, #FF5000 0%, #FF8400 100%);
+}
+.header h2{
+    justify-content: space-between;
+    font-size: 20px;
+    padding-left: 12px;
+    line-height: 3vh;
+    color: white;
+}
+
+.header-right span{
+    color: white;
+}
+
+.header-bottom{
+    width: 97%;
+    height: 120px;
+    padding: 5px 0px 0px 12px;
+    background-image: linear-gradient(-90deg, #FF5000 0%, #FF8400 100%);
+}
+
+.header-bottom p{
+    color: white;
+    font-size: 13px;
+    line-height: 14px;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+    margin-bottom: 200px;
+}
+.banner,.commod-con{
+    width: 94%;
+    margin: auto;
+    padding: auto;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.banner{
+    height: 45px;
+    position: relative;
+}
+
+.banner p{
+    line-height: 45px;
+    font-size: 14px;
+    margin-left:10px;
+    color: rgb(255, 17, 17);
+}
+.banner-img{
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 26px;
+    position: absolute;
+}
+
+.banner-img img{
+    float: right;
+    width: 80%;
+    border-top-right-radius: 12px;
+}
+.commod-con{
+    margin-top: 12px;
+}
+
+.commod-con-top{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+
+}
+.shop-info{
+    width: 88%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+}
+.shop-info .radio{
+    margin: 10px 12px;
+}
+
+.shop-info .shop-img{
+    width: 20px;
+    height: 20px;
+    margin: 10px 0px;
+    margin-right: 12px;
+}
+
+.shop-img img{
+    width: 20px;
+    height: 20px;
+}
+
+.shop-info .shop{
+    width: 115px;
+    height: 20px;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.shop-info .right-img{
+    width: 10px;
+    height: 20px;
+    margin: 9px 0px;
+}
+
+.shop-info .right-img img{
+    width: 7px;
+}
+
+.right-coupon{
+    width: 12%;
+    height: 24px;
+    padding: 10px 0px;
+    color: rgb(153, 153, 153);
+}
+
+
+.commod-info{
+    width: 100%;
+    height: 123px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.commod-info-radio{
+    width: 11.65%;
+    height: 123px;
+}
+
+.commod-info-radio .radio1{
+    margin: 50px 12px;
+}
+
+.commod-info-img{
+    width: 23.3%;
+    height: 123px;
+}
+
+.commod-info-img img{
+    margin: 15px 0px;
+    width: 100%;
+}
+.commod-info-con{
+    width: 65.05%;
+    height: 123px;
+}
+
+.commod-info-con p{
+    margin-top: 12px;
+    margin-left: 10px;
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+.specification{
+    display: flex;
+    flex-direction: row;
+    margin: 6px 0px 10px 10px;
+    padding: 2px;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #9c9c9c;
+    background-color: rgba(236, 236, 236, 0.298);
+}
+.specification div:nth-of-type(2){
+    margin-left: 10px;
+    width: 10px;
+}
+
+.specification img{
+    width: 80%;
+}
+
+.commod-info-con>span{
+    color: red;
+    margin-left: 12px;
+    font-size: 14px;
+}
+.count{
+    width: 100px;
+    height: 35px;
+    float: right;
+    display: flex;
+    margin-right: 5vw;
+    flex-direction: row;
+}
+
+.count-img-minus,.count-img-plus{
+    width: 30%;
+    height: 22px;
+    border: 1px solid #eeeeee;
+}
+
+.count-input{
+    width: 40%;
+    height: 22px;
+    line-height: 20px;
+    border: 1px solid #eeeeee;
+}
+.count input{
+    border: none;
+    text-align: center;
+    width: 100%;
+}
+
+.count img{
+    width: 100%;
+    height: 22px;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    background-color: white;
+    bottom: 0px;
+    line-height: 54px;
+}
+
+.footer-left{
+    width: 30%;
+    height: 54px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+.footer-right{
+    float: right;
+    width: 60%;
+    height: 54px;
+}
+footer #radio2{
+    margin: 15px 12px;
+}
+
+footer .all{
+    font-size: 14px;
+    color: #666666;
+}
+
+#f-r-con{
+    width: 100%;
+}
+
+
+#f-r-con p{
+    float: right;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+#f-r-con span:nth-of-type(1){
+    color: red;
+    margin-right: 5px;
+}
+
+.settle{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 8px 15px;
+    border-radius: 80px;
+    background: linear-gradient(90deg, #FF9000 0%, #FF5000 98%);
+}
+
+#count{
+    text-decoration: none;
+}
+
+#settle{
+    color: white;
+}
+
+#f-r-con1{
+    text-align: center;
+}
+
+#f-r-con1 span{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+#f-r-con1 span:nth-of-type(2){
+    color: #FF5000;
+    border-radius: 33px;
+    font-size: 13px;
+    padding: 4px 9px;
+    line-height: 15px;
+    border: 1px solid #FF5000;
+}
+
+#f-r-con1 span:nth-of-type(3){
+    color: #FC0A0A;
+    border: 1px solid #FC0A0A;
+    margin-left: 8px;
+    padding: 4px 13px;
+    border-radius: 33px;
+    font-size: 13px;
+    line-height: 15px;
+}

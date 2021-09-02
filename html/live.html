@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/live.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-top">
+                <div class="header-top-left">
+                        关注的直播
+                </div>
+                <div class="header-top-right">
+                    <div class="header-img">
+                        <img src="../images/捷买士.webp" alt="">
+                    </div>
+                    <div class="header-dynamic">
+                        <p>
+                            <span>全部动态</span>
+                            <span>></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <p>
+                    暂无主播开播
+                </p>
+            </div>
+            <div class="header-bottom">
+                <p>
+                    去推荐发现更多精彩的直播吧
+                </p>
+            </div>
+        </header>
+        <nav class="nav" id="nav">
+            <ul>
+                <li class="li1">推荐</li>
+                <li>流行穿搭</li>
+                <li>珠宝饰品</li>
+                <li>歌舞娱乐</li>
+                <li>宝妈优选</li>
+                <li>鲜花萌宠</li>
+                <li>美食生活</li>
+                <li>生活美家</li>
+                <li>运动健康</li>
+                <li>品质男装</li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <ul>
+                <li>
+                    <p>
+                        <img src="../images/直播.png" alt="">
+                        <span>6.3万人观看</span>
+                        <span>精品榴莲秒杀。</span>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <img src="../images/直播.png" alt="">
+                        <span>6.3万人观看</span>
+                        <span>精品榴莲秒杀。</span>
+                    </p>
+                    
+                </li>
+                <li>
+                    <p>
+                        <img src="../images/直播.png" alt="">
+                        <span>6.3万人观看</span>
+                        <span>精品榴莲秒杀。</span>
+                    </p>
+                    
+                </li>
+                <li>
+                    <p>
+                        <img src="../images/直播.png" alt="">
+                        <span>6.3万人观看</span>
+                        <span>精品榴莲秒杀。</span>
+                    </p>
+                    
+                </li>
+                <li>
+                    <p>
+                        <img src="../images/直播.png" alt="">
+                        <span>6.3万人观看</span>
+                        <span>精品榴莲秒杀。</span>
+                    </p>
+                    
+                </li>
+                <li>
+                    <p>
+                        <img src="../images/直播.png" alt="">
+                        <span>6.3万人观看</span>
+                        <span>精品榴莲秒杀。</span>
+                    </p>
+                    
+                </li>
+                
+            </ul>
+        </main>
+
+       
+        <footer>
+            <ul>
+                <li>
+                    <a href="../index.html"><img src="../images/主页.webp" alt=""></a>
+                    <p>首页</p>
+                </li>
+                <li>
+                    <a href="../html/live.html"><img src="../images/zhibo.webp" alt=""></a>
+                    <p class="navp">直播</p>
+                </li>
+                <li>
+                    <a href="../html/classification.html"><img src="../images/分类.webp" alt=""></a>
+                    <p>分类</p>
+    
+                </li>
+                <li>
+                    <a href="../html/chat.html"><img src="../images/聊天.webp" alt=""></a>
+                    <p>聊天</p>
+                </li>
+                <li>
+                    <a href="../html/personalcenter.html"><img src="../images/个人中心.webp" alt=""></a>
+                    <p>个人中心</p>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script>
+         window.onscroll=function(){
+                // scrollTop滚动坐标
+                console.log(document.documentElement.scrollTop||document.body.scrollTop)
+                var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+                if(scrollTop>200){
+                    nav.style.position='fixed'
+                    nav.style.top='0px';
+                }else{
+                    // 不定位
+                    nav.style.position='initial'
+                }
+            }
+    </script>
+</body>
+</html>

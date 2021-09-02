@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/classification.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <p>
+                <input type="text" value="学生上下床">
+            </p>
+        </header>
+
+        <main class="main">
+            <div class="main-left">
+                <ul id="list">
+                    <li class="current">推荐</li>
+                    <li>手机</li>
+                    <li>食品</li>
+                    <li>女装</li>
+                    <li>男装</li>
+                    <li>鞋包</li>
+                    <li>电器</li>
+                    <li>百货</li>
+                    <li>母婴</li>
+                    <li>内衣</li>
+                    <li>美妆</li>
+                    <li>数码</li>
+                    <li>洗护</li>
+                    <li>健康</li>
+                    <li>家装</li>
+                    <li>家纺</li>
+                    <li>生鲜</li>
+                    <li>运动</li>
+                    <li>车品</li>
+                    <li>图书</li>
+                    <li>充值</li>
+                    <li>海淘</li>
+                    <li>品牌</li>
+                </ul>
+            </div>
+            <div class="main-right" id="box">
+                <div class="main-right-con">
+                    <span>
+                        热门分类
+                    </span>
+                    <ul>
+                        <li >
+                            <p>
+                                <img src="../images/枕头.webp" alt="">
+                            </p>
+                            
+                            <p>枕头</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/拍立得.webp" alt="">
+                            </p>
+                            <p>拍立得</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/折叠床椅.webp" alt="">
+                            </p>
+                            <p>折叠床椅</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/上下床.webp" alt="">
+                            </p>
+                            <p>上下床</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/抽纸.webp" alt="">
+                            </p>
+                            <p>抽纸</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/方便面.webp" alt="">
+                            </p>
+                            <p>方便面</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/拖鞋.webp" alt="">
+                            </p>
+                            <p>男款拖鞋</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/一次性用品.webp" alt="">
+                            </p>
+                            <p>一次性用品</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/居家拖鞋.webp" alt="">
+                            </p>
+                            <p>居家拖鞋</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/休闲男鞋.webp" alt="">
+                            </p>
+                            <p>休闲男鞋</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/垃圾袋.webp" alt="">
+                            </p>
+                            <p>垃圾袋</p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="../images/被子.webp" alt="">
+                            </p>
+                            <p>被子</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>1</div>
+                <div>2</div>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="../index.html"><img src="../images/主页.webp" alt=""></a>
+                    <p>首页</p>
+                </li>
+                <li>
+                    <a href="../html/live.html"><img src="../images/直播.webp" alt=""></a>
+                    <p>直播</p>
+                </li>
+                <li>
+                    <a href="../html/classification.html"><img src="../images/fenlei.webp" alt=""></a>
+                    <p class="navp">分类</p>
+    
+                </li>
+                <li>
+                    <a href="../html/chat.html"><img src="../images/聊天.webp" alt=""></a>
+                    <p>聊天</p>
+                </li>
+                <li>
+                    <a href="../html/personalcenter.html"><img src="../images/个人中心.webp" alt=""></a>
+                    <p>个人中心</p>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script>
+        var lis=document.getElementById('list').children;
+        var divs=document.getElementById('box').children;
+        
+            for(var i=0;i<lis.length;i++){
+                // 自定义标签标签属性 把点击和下面的div联系起来
+                lis[i].setAttribute('index',i);
+                lis[i].onclick=function(){
+                    for(var t=0;t<lis.length;t++){
+                        lis[t].removeAttribute('class')
+                        divs[t].removeAttribute('class')
+                    }
+                    this.setAttribute('class','current');
+                    // // 点击的时候，获取属性
+                    var index=this.getAttribute('index');
+                    console.log(index);
+                    divs[index].setAttribute('class','main-right-con');
+                }
+            }
+    </script>
+</body>
+</html>
